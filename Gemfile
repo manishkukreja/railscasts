@@ -1,7 +1,8 @@
 source 'http://rubygems.org'
-
+gem  'rails-erd'
 gem "rails", "3.0.10"
-gem "mysql2"
+# gem "mysql2"
+gem 'pg'
 gem "redcarpet"
 gem "coderay"
 gem "thinking-sphinx", ">= 2.0.1", :require => "thinking_sphinx"
@@ -28,6 +29,8 @@ group :test do
   gem "fakeweb"
   gem "simplecov", :require => false
 end
+
+gem 'eventmachine', '1.0.0.beta.2'
 
 group :development do
   gem "thin"
